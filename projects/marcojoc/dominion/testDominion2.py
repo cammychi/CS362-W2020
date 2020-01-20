@@ -35,6 +35,9 @@ supply = defaultdict(list,[(k,box[k]) for k in random10])
 #The supply always has these cards
 testUtility.CreateSupply(supply, player_names, nV, nC)
 
+#TEST SCENARIO:
+supply["Duchy"]=[Dominion.Curse()]*nC
+
 #initialize the trash
 trash = []
 
